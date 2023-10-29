@@ -1,0 +1,13 @@
+kareemjadou@gmail.com install https://cs.android.com/android/platform/superproject/mainimport { Ai } from '@cloudflare/ai';
+
+const ai = new Ai(env.AI)
+
+const output = await ai.run('@cf/meta/llama-2-7b-chat-int8', {
+  prompt: 'package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello-World!")
+} Workers AI'
+})082518e4-71c2-4565-8e9d-70504660c936
